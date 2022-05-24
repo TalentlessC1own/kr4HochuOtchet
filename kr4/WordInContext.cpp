@@ -2,7 +2,7 @@
 
 int WordInContext::GetNUmberOfPermutations()
 {
-    return words_2.size() - 1;
+    return static_cast<int>(words_2.size()) - 1;
 }
 
 bool WordInContext::CompareContext(std::string word1, std::string word3)
