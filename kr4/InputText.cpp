@@ -16,5 +16,5 @@ void  InputText(std::string* text)
         *text +=buffer + "\n";
 
     }
-    text = nullptr;
+    //text = nullptr;
 }

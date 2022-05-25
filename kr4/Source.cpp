@@ -55,6 +55,7 @@ int main()
 		switch (menu_item)
 		{
 		case Menu::input:
+			text.clear();
 			std::cout << "1 - console\n2 - file" << std::endl;
 			type = static_cast<Type>(CheckMenu(2));
 			switch (type)
@@ -86,8 +87,13 @@ int main()
 		if(!text.empty())
 			words = SplitIntoWords(text);
 		context_case.clear();
-		if(!words.empty())
+		if (!words.empty())
+		{
 			FindSameContextWords(context_case, words);
+			for (int i = 0; i < context_case.size();i++)
+				context_case[i]->FindPermutaionsAdapt();
+		}
+
 	}
 }
 

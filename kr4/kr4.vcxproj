@@ -147,6 +147,7 @@
     <ClInclude Include="FindSameContextWords.h" />
     <ClInclude Include="InputText.h" />
     <ClInclude Include="SplitIntoWords.h" />
+    <ClInclude Include="VectorEqual.h" />
     <ClInclude Include="WordInContext.h" />
   </ItemGroup>
   <ItemGroup>
@@ -159,6 +160,7 @@
     <ClCompile Include="InputText.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="SplitIntoWords.cpp" />
+    <ClCompile Include="VectorEqual.cpp" />
     <ClCompile Include="WordInContext.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
